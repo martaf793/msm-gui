@@ -14,4 +14,7 @@ class MoviesController < ApplicationController
 
     render({ :template => "movie_templates/show" })
   end
+  def new
+    redirect_to("/movies")
+  end
 end

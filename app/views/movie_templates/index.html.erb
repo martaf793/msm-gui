@@ -1,7 +1,33 @@
 <h1>
   List of all movies
 </h1>
-
+<form action="/new_movie" method="post">
+  <div>
+    <label for="title_field">Title </label>
+    <input id="title_field" type="text" name="title">
+  </div>
+  <div>
+    <label for="year_field">Year </label>
+    <input id="year_field" type="text" name="year">
+  </div>
+    <div>
+    <label for="duration_field">Duration </label>
+    <input id="duration_field" type="text" name="duration">
+  </div>
+  <div>
+    <label for="description_field">Description </label>
+    <input id="description_field" type="text" name="description">
+  </div>
+  <div>
+    <label for="image_field">Image </label>
+    <input id="image_field" type="text" name="image">
+  </div>
+  <div>
+    <label for="director_field">Director </label>
+    <input id="director_field" type="text" name="director">
+  </div>
+  <button>Create movie</button>
+</form>
 <hr>
 
 <table border="1">
