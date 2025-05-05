@@ -40,6 +40,6 @@ class ActorsController < ApplicationController
     a.name=params.fetch("name")
     a.image=params.fetch("image")
     a.save
-    redirect_to("/actors/#{d.id}")
+    redirect_to("/actors/#{a.id}")
   end
 end
