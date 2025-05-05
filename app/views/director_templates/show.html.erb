@@ -7,6 +7,32 @@
 </a>
 
 <hr>
+<div>
+  <a href="/update_director/<%= @the_director.id%>" >Delete director</a>
+</div>
+
+<hr>
+<form action="/new_director" method="post">
+  <div>
+    <label for="name_field">Name </label>
+    <input id="name_field" type="text" name="name">
+  </div>
+  <div>
+    <label for="dob_field">Dob </label>
+    <input id="dob_field" type="text" name="dob">
+  <div>
+    <label for="bio_field">Bio </label>
+    <input id="bio_field" type="text" name="bio">
+  </div>
+  <div>
+    <label for="image_field">Image </label>
+    <input id="image_field" type="text" name="image">
+  </div>
+  <button>Update director</button>
+</form>
+
+
+<hr>
 
 <dl>
   <dt>
