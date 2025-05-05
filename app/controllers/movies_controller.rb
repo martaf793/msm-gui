@@ -23,7 +23,6 @@ class MoviesController < ApplicationController
     m.image=params.fetch("image")
     m.director_id=params.fetch("director")
     m.save
-
     redirect_to("/movies")
   end
   def delete

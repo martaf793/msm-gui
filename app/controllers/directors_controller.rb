@@ -56,7 +56,6 @@ class DirectorsController < ApplicationController
     the_id=params.fetch("path_id")
     matching_rec=Director.where({:id=>the_id})
     d=matching_rec.at(0)
-    d=Director.new
     d.bio=params.fetch("bio")
     d.dob=params.fetch("dob")
     d.name=params.fetch("name")

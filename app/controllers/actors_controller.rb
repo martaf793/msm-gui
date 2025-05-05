@@ -34,7 +34,6 @@ class ActorsController < ApplicationController
     the_id=params.fetch("path_id")
     matching_rec=Actor.where({:id=>the_id})
     a=matching_rec.at(0)
-    a=Actor.new
     a.bio=params.fetch("bio")
     a.dob=params.fetch("dob")
     a.name=params.fetch("name")
