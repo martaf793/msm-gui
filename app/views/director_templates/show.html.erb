@@ -8,11 +8,11 @@
 
 <hr>
 <div>
-  <a href="/update_director/<%= @the_director.id%>" >Delete director</a>
+  <a href="/delete_director/<%= @the_director.id%>" >Delete director</a>
 </div>
 
 <hr>
-<form action="/new_director" method="post">
+<form action="/update_director/<%= @the_director.id%>" method="post">
   <div>
     <label for="name_field">Name </label>
     <input id="name_field" type="text" name="name">
